@@ -1,0 +1,9 @@
+# OS File
+.DS_Store
+
+# IDE
+.idea
+
+# Npm
+node_modules
+ulidGenerator.js
