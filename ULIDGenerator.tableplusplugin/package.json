@@ -1,10 +1,10 @@
 {
-  "name": "com.tableplus.TablePlus.ULIDGenerator",
-  "version": "0.1.0",
+  "name": "im.arafat.TablePlus.ULIDGenerator",
+  "version": "0.1.1",
   "description": "This plugin helps you generate ULID in TablePlus App",
   "main": "main.js",
   "dependencies": {
-    "ulid": "^2.3.0",
+    "ulidx": "^2.3.0",
     "webpack": "5.79.0"
   },
   "devDependencies": {
@@ -15,7 +15,10 @@
   "scripts": {
     "build": "webpack"
   },
-  "keywords": ["TablePlus", "ULID Generator"],
+  "keywords": [
+    "TablePlus",
+    "ULID Generator"
+  ],
   "author": "https://arafat.im",
   "license": "MIT"
 }

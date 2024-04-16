@@ -1,17 +1,17 @@
-import { ulid } from 'ulid';
+import { ulid } from 'ulidx';
 
-var setContent = function(context, ulid) {
+const setContent = function (context, content) {
   // Get all the items
-  var row = context.clickedRow();
-  var col = context.clickedColumn();
-  var item = context.currentItem();
+  const row = context.clickedRow();
+  const col = context.clickedColumn();
+  const item = context.currentItem();
 
   if (row == null || col == null || item == null) {
     context.alert('Error', 'No item cliked');
     return;
   }
 
-  if (ulid == null) {
+  if (content == null) {
     context.alert('Error', 'Could not generate UUID');
     return;
   }
@@ -20,7 +20,7 @@ var setContent = function(context, ulid) {
   row.setConstant(col.name, '');
 
   // Update row value
-  row.update(col.name, ulid);
+  row.update(col.name, content);
 
   // Add to update queue
   item.addUpdate(row);
@@ -30,5 +30,10 @@ var setContent = function(context, ulid) {
 };
 
 global.generateULID = function (context) {
-  setContent(context, ulid());
+  try {
+    const content = ulid(Date.now(), () => Math.random());
+    setContent(context, content);
+  } catch (e) {
+    setContent(context, e.message);
+  }
 };

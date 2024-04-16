@@ -2,7 +2,7 @@
 
 # What is this
 
-This is a TablePlus Plugin, install OpenURL you will have a menu `Generate ULID` in context menu.
+This is a TablePlus Plugin, you will have a menu `Generate ULID` in context menu.
 
 # Support
 
@@ -12,7 +12,7 @@ TablePlus build 272 and above.
 
 ### From release
 
-Download [release](https://github.com/arafatkn/tableplus-ulid-generator/releases), unzip and double click on file plugin to install.
+Download installable file from [release](https://github.com/arafatkn/tableplus-ulid-generator/releases), unzip and double-click on file plugin to install.
 
 ### Build from source
 
