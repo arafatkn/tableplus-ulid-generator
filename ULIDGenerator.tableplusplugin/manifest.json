@@ -1,10 +1,10 @@
 {
-  "name": "UUID Generator",
-  "identifier": "com.tableplus.TablePlus.UUIDGenerator",
-  "version": "0.1.0",
-  "detail": "This plugin helps you generate UUID",
-  "author": "TablePlus",
-  "authorEmail": "nick@tableplus.com",
+  "name": "ULID Generator",
+  "identifier": "im.arafat.TablePlus.ULIDGenerator",
+  "version": "0.1.1",
+  "detail": "This plugin helps you generate ULID",
+  "author": "Arafat Islam",
+  "authorEmail": "me@arafat.im",
   "scripts": [
     {
       "location": "data",
