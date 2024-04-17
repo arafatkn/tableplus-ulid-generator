@@ -4,6 +4,8 @@
 
 This is a TablePlus Plugin, you will have a menu `Generate ULID` in context menu.
 
+![menu](demo.gif "menu")
+
 # Support
 
 TablePlus build 272 and above.
